@@ -1,0 +1,37 @@
+
+.wrapper .right{
+  padding: 25px;
+background-color: #e6f4f1;
+border-radius: 0 0 24px 24px;
+width: 100%;
+justify-content: center;
+display: flex;
+}
+.wrapper .left h1{
+  text-align: center;
+}
+/* the second  */
+
+.wrapper-nd .right-nd{
+  padding: 25px;
+background-color: #e6f4f1;
+border-radius: 0 0 24px 24px;
+width: 100%;
+justify-content: center;
+display: flex;
+}
+.wrapper-nd .left-nd h1{
+  text-align: center;
+}
+/* third */
+.wrapper-th .right-th{
+ padding: 25px;
+background-color: #e6f4f1;
+border-radius: 0 0 24px 24px;
+width: 100%;
+justify-content: center;
+display: flex;
+}
+.wrapper-th .left-th h1{
+  text-align: center;
+}
