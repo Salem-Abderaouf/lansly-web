@@ -3,6 +3,10 @@
   BLACK: '#454555',
   WHITE: '#fff',
   GREY: '#eff0f5', */
+@font-face{
+  src:url('../assets/GothaProReg.otf');
+  font-family: Gotham;
+}
 *{
   margin: 0;
   padding: 0;
@@ -13,7 +17,7 @@ html,body{
   overflow-x: hidden;
 }
 body{
-  font-family: "Gotham Pro";
+  font-family: Gotham;
 }
 nav{
   height: 73px;
