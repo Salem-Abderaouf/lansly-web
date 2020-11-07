@@ -5,6 +5,7 @@
   GREY: '#eff0f5', */
 @font-face{
   src:url('../assets/GothaProReg.otf');
+  font-display: block;
   font-family: Gotham;
 }
 *{
@@ -45,6 +46,28 @@ nav ul li a{
   text-decoration: none;
   color: #454555;
   transition: color .3s linear;
+  position: relative;
+}
+nav ul li a:hover:before{
+  left: 0;
+  right: 0;
+}
+nav ul li a:before{
+  content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: -10px;
+    background: #667eea;
+    height: 4px;
+    border-radius: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 nav ul li a:hover{
   color: #667eea;
@@ -102,9 +125,7 @@ main .hero-image .image{
   margin:0 20px;
   border-radius: 24px;
   background-color:#fff;
-  -webkit-box-shadow: 0px 24px 28px -11px rgb(128, 120, 128);
--moz-box-shadow: 0px 24px 28px -11px rgb(128, 120, 128);
-box-shadow: 0px 24px 28px -11px rgb(128, 120, 128);
+  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper .left{
   line-height: 1.75;
@@ -138,9 +159,7 @@ box-shadow: 0px 24px 28px -11px rgb(128, 120, 128);
   margin:0 20px;
   border-radius: 24px;
   background-color:#fff;
-  -webkit-box-shadow: 0px 24px 28px -11px rgb(128, 120, 128);
--moz-box-shadow: 0px 24px 28px -11px rgb(128, 120, 128);
-box-shadow: 0px 24px 28px -11px rgb(128, 120, 128);
+  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper-nd .left-nd{
   line-height: 1.75;
@@ -173,9 +192,7 @@ box-shadow: 0px 24px 28px -11px rgb(128, 120, 128);
   margin:0 20px;
   border-radius: 24px;
   background-color:#fff;
-  -webkit-box-shadow: 0px 24px 28px -11px rgb(128, 120, 128);
--moz-box-shadow: 0px 24px 28px -11px rgb(128, 120, 128);
-box-shadow: 0px 24px 28px -11px rgb(128, 120, 128);
+  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper-th .left-th{
   line-height: 1.75;
