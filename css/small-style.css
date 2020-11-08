@@ -6,8 +6,8 @@ main{
   margin: 50px 0;
   padding: 0;
 }
-.wrapper , .wrapper-th{
-  flex-direction: column-reverse;
+.wrapper , .wrapper-nd,.wrapper-th{
+  flex-flow: column-reverse wrap !important;
 }
 .wrapper .right{
   padding: 25px;
@@ -70,4 +70,105 @@ display: flex;
 .wrapper-th .left-th h1{
   text-align: center;
   font-size: 16px;
+}
+
+/*PRIMARY: '#667eea',
+  SECONDARY: '#ff9a83',
+  BLACK: '#454555',
+  WHITE: '#fff',
+  GREY: '#eff0f5', */
+@font-face{
+  src:url('../assets/GothaProReg.otf');
+  font-display: block;
+  font-family: Gotham;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  overflow-x: hidden;
+}
+body{
+  font-family: Gotham;
+}
+nav{
+  height: 73px;
+  width:100%;
+}
+nav{
+  display: flex;
+  background-color: white;
+  position: relative;
+  top: 0;
+  z-index: 9999;
+  justify-content: space-around;
+  align-items: center;
+}
+nav h2{
+  color: #667eea;
+  font-weight: bold;
+}
+nav ul li{
+  list-style: none;
+  float: right;
+  margin: 0 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #454555;
+  transition: color .3s linear;
+  position: relative;
+}
+nav ul li a:hover:before{
+  left: 0;
+  right: 0;
+}
+nav ul li a:before{
+  content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: -10px;
+    background: #667eea;
+    height: 3px;
+    border-radius: 3px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+nav ul li a:hover{
+  color: #667eea;
+}
+
+main .hero-information{
+  line-height: 1.75;
+  line-break: auto;
+  transform: translateY(-73px);
+}
+main .hero-information h1{
+  color: #667eea;
+}
+main .hero-information p{
+  color: #454545;
+}
+main .hero-image{
+  border-radius:12px;
+  transform: translateY(-73px);
+}
+main .hero-image .image{
+   animation: floating 3s ease-in-out  infinite;
+  position: relative;
+  z-index: 3;
+}
+@keyframes floating {
+  0% {transform: translateY(10px)}
+  50% {transform: translateY(0)}
+  100%{transform: translateY(10px)}
 }

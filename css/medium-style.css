@@ -1,6 +1,9 @@
 main{
   margin-top: 146px;
 }
+.wrapper , .wrapper-nd,.wrapper-th{
+  flex-flow: column wrap !important;
+}
 .wrapper .right{
   padding: 25px;
 background-color: #e6f4f1;
@@ -36,4 +39,211 @@ display: flex;
 }
 .wrapper-th .left-th h1{
   text-align: center;
+}
+/*copeid */
+@font-face{
+  src:url('../assets/GothaProReg.otf');
+  font-display: block;
+  font-family: Gotham;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  overflow-x: hidden;
+}
+body{
+  font-family: Gotham;
+}
+nav{
+  height: 73px;
+  width:100%;
+}
+nav{
+  display: flex;
+  background-color: white;
+  position: relative;
+  top: 0;
+  z-index: 9999;
+  justify-content: space-around;
+  align-items: center;
+}
+nav h2{
+  color: #667eea;
+  font-weight: bold;
+}
+nav ul li{
+  list-style: none;
+  float: right;
+  margin: 0 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #454555;
+  transition: color .3s linear;
+  position: relative;
+}
+nav ul li a:hover:before{
+  left: 0;
+  right: 0;
+}
+nav ul li a:before{
+  content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: -10px;
+    background: #667eea;
+    height: 3px;
+    border-radius:3px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+nav ul li a:hover{
+  color: #667eea;
+}
+main{
+  width: 100vw !important;
+position: relative;
+margin: 146px auto;
+background: linear-gradient(180deg, rgba(255,255,255,1) 80%, rgba(102,126,234,.4) 100%);
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+text-align: center;
+}
+main .hero-information{
+  line-height: 1.75;
+  line-break: auto;
+  transform: translateY(-73px);
+}
+main .hero-information h1{
+  color: #667eea;
+}
+main .hero-information p{
+  color: #454545;
+}
+main .hero-image{
+  border-radius:12px;
+  transform: translateY(-73px);
+}
+main .hero-image .image{
+   animation: floating 3s ease-in-out  infinite;
+  position: relative;
+  z-index: 3;
+}
+@keyframes floating {
+  0% {transform: translateY(10px)}
+  50% {transform: translateY(0)}
+  100%{transform: translateY(10px)}
+}
+.why-this-app{
+  width: 100%;
+  padding:35px 25px;
+   display: flex;
+   margin:25px 0;
+   justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.first .wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow:row wrap;
+  margin:0 20px;
+  border-radius: 24px;
+  background-color:#fff;
+  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
+}
+.wrapper .left{
+  line-height: 1.75;
+  max-width: 600px;
+  height: 100%;
+  padding: 25px;
+}
+.wrapper .left p{
+  text-align: justify;
+}
+.wrapper .left h1{
+  font-weight:bold;
+  color: #667eea;
+}
+.wrapper .right{
+  height: 100%;
+  padding: 25px;
+  background-color: #e6f4f1;
+}
+/* the second  */
+
+
+.second .wrapper-nd{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  flex-flow:row-reverse wrap;
+  margin:0 20px;
+  border-radius: 24px;
+  background-color:#fff;
+  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
+}
+.wrapper-nd .left-nd{
+  line-height: 1.75;
+  max-width: 600px;
+  height: 100%;
+  padding: 25px;
+}
+.wrapper-nd .left-nd p{
+  text-align: justify;
+}
+.wrapper-nd .left-nd h1{
+  font-weight:bold;
+  color: #667eea;
+}
+.wrapper-nd .right-nd{
+  height: 100%;
+  padding: 25px;
+  background-color: #e6f4f1;
+}
+
+/* third */
+
+.third .wrapper-th{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  flex-flow:row wrap;
+  margin:0 20px;
+  border-radius: 24px;
+  background-color:#fff;
+  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
+}
+.wrapper-th .left-th{
+  line-height: 1.75;
+  max-width: 600px;
+  height: 100%;
+  padding: 25px;
+}
+.wrapper-th .left-th p{
+  text-align: justify;
+}
+.wrapper-th .left-th h1{
+  font-weight:bold;
+  color: #667eea;
+}
+.wrapper-th .right-th{
+  height: 100%;
+  padding: 25px;
+  background-color: #e6f4f1;
 }
