@@ -1,0 +1,121 @@
+.first-member{
+ margin: 73px 0;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.image{
+  width: 300px;
+  min-height: 500px;
+  max-height: 700px;
+  background-size:auto;
+  border-radius: 12px;
+}
+.first-member-image{
+  position: relative;
+}
+.first-member-image:hover{
+  cursor: pointer;
+  animation: floating 3s ease-in-out infinite;
+}
+.first-member-image:before{
+  content: '';
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  z-index: -1;
+  min-height: 500px;
+  max-height: 700px;
+  background-color: #eff0f5;
+  border-radius: 12px;
+}
+.member-information{
+  line-height: 1.75;
+}
+.member-information h2{
+  color: #667eea;
+}
+.member-information ul li{
+  list-style: none;
+  float: right;
+  margin: 0 15px;
+}
+.member-information p{
+  text-align: left;
+}
+.icon{
+  width: 45px;
+  margin: 25px 0;
+  height: 45px;
+  transition: color .3s linear;
+  color: #454545;
+}
+.icon:hover{
+  color: #667eea;
+}
+/* Second Memeber */
+.second-member{
+  margin: 73px 0;
+  position: relative;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.second-member-image{
+  position: relative;
+}
+.second-member-image:before{
+  content: '';
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  z-index: -1;
+  min-height: 500px;
+  max-height: 700px;
+  background-color: #454545;
+  border-radius: 12px;
+}
+/* Third Member */
+.third-member{
+  margin: 73px 0;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+@keyframes floating {
+  0% {transform: translateY(0)}
+  50% {transform: translateY(10px)}
+  100%{transform: translateY(0)}
+}
+
+@media(max-width:760px){
+  .first-member{
+    margin:146px 0;
+    flex-flow: column-reverse;
+  }
+  .second-member,.third-member{
+margin: 73px 0;
+ flex-direction: column-reverse;
+   }
+  .member-information{
+    padding: 15px;
+    text-align: center;
+  }
+  .member-information p{
+    text-align: center;
+  }
+  .first-member-image:before,.second-member-image:before,.third-member-image:before{
+    content: none;
+  }
+
+}
