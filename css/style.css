@@ -29,7 +29,7 @@ nav{
   background-color: white;
   position: relative;
   top: 0;
-  z-index: 9999;
+  z-index: 2;
   justify-content: space-around;
   align-items: center;
 }
@@ -58,10 +58,10 @@ nav ul li a:before{
     z-index: -1;
     left: 51%;
     right: 51%;
-    bottom: -10px;
+    bottom: -12px;
     background: #667eea;
-    height: 3px;
-    border-radius: 3px;
+    height: 4px;
+    border-radius: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
     -webkit-transition-duration: 0.3s;
