@@ -72,11 +72,32 @@ nav ul li a:before{
 nav ul li a:hover{
   color: #667eea;
 }
+main:before{
+  content: '';
+  width: 200px;
+  height: 200px;
+  top: 0;
+  right: -100px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  border:20px solid #eff0f5;
+}
+main:after{
+  content: '';
+  width: 200px;
+  height: 200px;
+  bottom: -100px;
+  left: 0;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  border:20px solid #eff0f5;
+}
 main{
-  width: 100vw !important;
+width: 100vw !important;
 position: relative;
 margin: 73px 0;
-background: linear-gradient(180deg, rgba(255,255,255,1) 80%, rgba(102,126,234,.4) 100%);
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -122,15 +143,14 @@ main .hero-image .image{
   justify-content: space-evenly;
   align-items: center;
   margin:0 20px;
-  border-radius: 24px;
-  background-color:#fff;
-  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper .left{
   line-height: 1.75;
   max-width: 600px;
-  height: 100%;
   padding: 25px;
+  margin: 0 25px;
+   border-radius: 24px;
+  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper .left p{
   text-align: justify;
@@ -140,10 +160,19 @@ main .hero-image .image{
   color: #667eea;
 }
 .wrapper .right{
-  height: 100%;
-  padding: 25px;
-  background-color: #e6f4f1;
+  position: relative;
   border-radius: 0 24px 24px 0;
+}
+.wrapper .right:before{
+  content: '';
+  height: 400px;
+  width: 400px;
+  border-radius: 25px;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  background-color: #e6f4f1;
 }
 /* the second  */
 
