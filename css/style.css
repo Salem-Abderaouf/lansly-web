@@ -81,7 +81,7 @@ main:before{
   position: absolute;
   border-radius: 50%;
   z-index: -1;
-  border:20px solid #eff0f5;
+  border:20px solid #ff9a83;
 }
 main:after{
   content: '';
@@ -92,7 +92,7 @@ main:after{
   border-radius: 50%;
   position: absolute;
   z-index: -1;
-  border:20px solid #eff0f5;
+  border:20px solid #ff9a83;
 }
 main{
 width: 100vw !important;
@@ -167,12 +167,12 @@ main .hero-image .image{
   content: '';
   height: 400px;
   width: 400px;
-  border-radius: 25px;
+  border-radius: 24px;
   top: 0;
   right: 0;
   z-index: -1;
   position: absolute;
-  background-color: #e6f4f1;
+  background-color: #ff9a83;
 }
 /* the second  */
 
@@ -184,15 +184,14 @@ main .hero-image .image{
   position: relative;
   flex-direction: row-reverse;
   margin:0 20px;
-  border-radius: 24px;
-  background-color:#fff;
-  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper-nd .left-nd{
   line-height: 1.75;
   max-width: 600px;
-  height: 100%;
   padding: 25px;
+  margin: 0 25px;
+   border-radius: 24px;
+  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper-nd .left-nd p{
   text-align: justify;
@@ -204,27 +203,37 @@ main .hero-image .image{
 .wrapper-nd .right-nd{
   height: 100%;
   padding: 25px;
-  background-color: #e6f4f1;
-  border-radius: 24px 0 0 24px;
+}
+.wrapper-nd .right-nd:before{
+  content: '';
+  height: 400px;
+  width: 400px;
+  border-radius: 24px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  background-color: #ff9a83;
 }
 
 /* third */
 
 .third .wrapper-th{
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
   margin:0 20px;
-  border-radius: 24px;
-  background-color:#fff;
-  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper-th .left-th{
   line-height: 1.75;
   max-width: 600px;
-  height: 100%;
   padding: 25px;
+  margin: 0 25px;
+   border-radius: 24px;
+   background-color: #fff;
+  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper-th .left-th p{
   text-align: justify;
@@ -236,6 +245,15 @@ main .hero-image .image{
 .wrapper-th .right-th{
   height: 100%;
   padding: 25px;
-  background-color: #e6f4f1;
-  border-radius: 0 24px 24px 0;
+}
+.wrapper-th .right-th:before{
+  content: '';
+  height: 400px;
+  width: 400px;
+  border-radius: 24px;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  background-color: #ff9a83;
 }
