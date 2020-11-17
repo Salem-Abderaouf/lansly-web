@@ -8,11 +8,15 @@
   <title>lansly Team</title>
   <link rel="stylesheet" href="css/nav-style.css">
   <link rel="stylesheet" href="css/about-style.css">
+  <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
-  <nav>
+  <nav id="navbar">
     <h2>Lansly</h2>
+    <div>
+      <ion-icon name="filter" class="nav-menu" onclick="toggelNavbar()"></ion-icon>
+    </div>
     <ul>
       <li><a href="./help.html">Help</a></li>
       <li><a href="./terms.html">Terms & Conditions</a></li>
@@ -20,6 +24,16 @@
       <li><a href="\">Home</a></li>
     </ul>
   </nav>
+  <section class="mini-navBar">
+    <ul>
+      <li><a href="\">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./why-this-app.html">Why this app</a></li>
+      <li><a href="./terms.html">Terms & Conditions</a></li>
+      <li><a href="./help.html">Help</a></li>
+    </ul>
+
+  </section>
   <section class="team first-member">
     <div class="member-information">
       <h2>Selama Salem </h2>
@@ -93,6 +107,7 @@
       </ul>
     </div>
   </section>
+  <script async src="./js/app.js"></script>
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 
