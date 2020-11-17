@@ -1,0 +1,40 @@
+
+/* Mini NavBar  */
+.nav-menu{
+  color:#000 !important;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  transition:color .7s linear;
+}
+.nav-menu:hover{
+  color: #667eea;
+}
+.mini-navBar{
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all .7s linear;
+}
+.mini-navBar ul{
+  margin-top: -73px;
+  list-style: none;
+}
+.mini-navBar ul li{
+  margin: 25px 0;
+}
+.mini-navBar ul li a{
+  text-decoration:none;
+  color: #121212;
+  font-size: 18px;
+}
+.Active{
+  display: flex;
+}
+/* Mini Nav Bar */
