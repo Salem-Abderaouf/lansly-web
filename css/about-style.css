@@ -8,28 +8,41 @@
   align-items: center;
 }
 .image{
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   background-size:auto;
   border-radius: 12px;
 }
 .first-member-image{
   position: relative;
 }
-.first-member-image:before{
+.first-member-image:after{
   content: '';
-  width: 800px;
-  height: 500px;
+  width: 400px;
+  height: 300px;
   position: absolute;
   top: 15px;
-  left: 30px;
+  left: 10px;
   z-index: -1;
-  background-color: #ff9a83;
+  opacity: 1;
+  background-color: #eff0f5;
   border-radius: 12px;
 }
+.first-member-image:before{
+  content: '';
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top:30px;
+  opacity: .6;
+  left: 20px;
+  z-index: -1;
+  background-color: #eff0f5;
+  border-radius: 12px;
+}
+
 .member-information{
   line-height: 1.75;
-  box-shadow:-5px 8px 12px 0 rgba(46,61,73,.2);
   border-radius: 12px;
   padding: 25px;
   position: relative;
@@ -43,26 +56,53 @@
 }
 .member-information h2{
   color: #667eea;
+  align-self: flex-start !important;
 }
 .member-information ul li{
   list-style: none;
   float: right;
+  align-self: flex-end !important;
   margin: 0 15px;
 }
 .member-information p{
   text-align: left;
 }
+/* Fisrt child icon styling */
+.contact-accounts{
+  list-style: none;
+  position: absolute;
+  bottom: 10px;
+  left: -22.5px;
+}
 .icon{
   width: 45px;
-  margin: 25px 0;
+  margin: 20px 0;
   height: 45px;
   transition: color .3s linear;
-  color: #454545;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #ffffff;
+  position: relative;
+  z-index: 3;
+}
+.icon:before{
+  content: '';
+  background-color: #121212;
+  width: 65px;
+  border-radius: 50%;
+  height: 65px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
 }
 .icon:hover{
   color: #667eea;
 }
 /* Second Memeber */
+.second-member-image{
+  position: relative;
+}
 .second-member{
   margin: 146px 0;
   position: relative;
@@ -108,7 +148,14 @@ section:nth-child(odd):after{
   background-color: #454545;
   border-radius: 12px;
 }
+.second-element{
+  right: -22.5px !important;
+  left: unset;
+}
 /* Third Member */
+.third-member-image{
+  position: relative;
+}
 .third-member{
   margin: 73px 0;
   position: relative;
@@ -148,4 +195,60 @@ margin: 73px 0;
     content: none;
   }
 
+  .first-member-image,.second-member-image,.third-member-image{
+    margin-bottom: 20px;
+  }
+  /* Reset icons   */
+.contact-accounts{
+  bottom: -10px;
+  display: flex;
+  left: calc(400px - 170px);
+}
+.icon{
+  width: 45px;
+  height: 45px;
+  margin:0 20px ;
+  transition: color .3s linear;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #ffffff;
+  position: relative;
+  z-index: 3;
+}
+.icon:before{
+  content: '';
+  background-color: #121212;
+  width: 65px;
+  border-radius: 50%;
+  height: 65px;
+  position: absolute;
+  bottom: -10px !important;
+  left: calc((400px / 2 )- 22.5px);
+  z-index: -1;
+}
+.icon:hover{
+  color: #667eea;
+}
+
+}
+@media(max-width:380px){
+  .image{
+  width: 310px;
+  height: 210px;
+  background-size:auto;
+  border-radius: 12px;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+  left: -100px;
+}
+.icon:before{
+  content: '';
+  width: 50px;
+  height: 50px;
+}
+.member-information p{
+  text-align: justify;
+}
 }
