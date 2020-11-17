@@ -172,6 +172,10 @@ section:nth-child(odd):after{
 }
 
 @media(max-width:760px){
+  nav{
+    justify-content: space-between;
+    padding: 0 10px;
+  }
   .first-member{
     margin:146px 0;
     flex-flow: column-reverse;
