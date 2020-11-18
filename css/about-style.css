@@ -241,7 +241,7 @@ height: unset;
 }
 @media(max-width:380px){
   .image{
-  width: 310px;
+  width: 315px;
   height: 210px;
   background-size:auto;
   border-radius: 12px;
