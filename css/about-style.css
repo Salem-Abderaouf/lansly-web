@@ -1,5 +1,5 @@
 .first-member{
-  margin: 73px 0;
+  height: calc(100vh - 73px);
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -56,6 +56,7 @@
 }
 .member-information h2{
   color: #667eea;
+  font-size: 2em;
   align-self: flex-start !important;
 }
 .member-information ul li{
@@ -66,6 +67,7 @@
 }
 .member-information p{
   text-align: left;
+  font-size: 18px;
 }
 /* Fisrt child icon styling */
 .contact-accounts{
@@ -104,7 +106,7 @@
   position: relative;
 }
 .second-member{
-  margin: 146px 0;
+ height: calc(100vh - 73px);
   position: relative;
   display: flex;
   flex-flow: row-reverse wrap;
@@ -157,7 +159,7 @@ section:nth-child(odd):after{
   position: relative;
 }
 .third-member{
-  margin: 73px 0;
+  height: calc(100vh - 146px);
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -178,10 +180,12 @@ section:nth-child(odd):after{
   }
   .first-member{
     margin:146px 0;
+    height: unset;
     flex-flow: column-reverse;
   }
   .second-member,.third-member{
 margin: 73px 0;
+height: unset;
  flex-direction: column-reverse;
    }
   .member-information{
