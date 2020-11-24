@@ -101,6 +101,7 @@ body{
 nav{
   height: 73px;
   width:100%;
+   border: 1px solid #f7f7f7;
 }
 nav{
   display: flex;
@@ -154,6 +155,10 @@ nav ul li a:hover{
 main .hero-information{
   line-height: 1.75;
   line-break: auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
   transform: translateY(-73px);
 }
 main .hero-information h1{
@@ -167,7 +172,6 @@ main .hero-image{
   transform: translateY(-73px);
 }
 main .hero-image .image{
-   animation: floating 3s ease-in-out  infinite;
   position: relative;
   z-index: 3;
 }
@@ -176,3 +180,36 @@ main .hero-image .image{
   50% {transform: translateY(0)}
   100%{transform: translateY(10px)}
 }
+/* play store button */
+.get-app-button{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 15px;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  border:2px solid #ea3b6c;
+  background-color: #ea3b6c;
+  border-radius: 12px;
+  font-size: 24px;
+  color: #fff;
+}
+.get-app-button div{
+  margin: 0 0 0 10px;
+}
+.get-app-button div p:first-child{
+  font-size: 12px;
+  text-align: left;
+  color: #121212 !important;
+  font-weight: 400;
+}
+.get-app-button div p{
+  color: #fff !important;
+   font-size: 16px;
+   font-weight: bold;
+}
+.image{
+  height: 300px;
+  width: 300px;
+}
+/* play store button*/

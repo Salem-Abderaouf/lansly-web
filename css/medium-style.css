@@ -16,7 +16,10 @@ display: flex;
   text-align: center;
 }
 /* the second  */
-
+.image , .img{
+  height: 400px;
+  width: 400px;
+}
 .wrapper-nd .right-nd{
   padding: 25px;
 background-color: #e6f4f1;
@@ -61,6 +64,7 @@ body{
 nav{
   height: 73px;
   width:100%;
+   border: 1px solid #f7f7f7;
 }
 nav{
   display: flex;
@@ -125,6 +129,10 @@ main .hero-information{
   line-height: 1.75;
   line-break: auto;
   transform: translateY(-73px);
+  display:flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
 }
 main .hero-information h1{
   color: #667eea;
@@ -137,10 +145,38 @@ main .hero-image{
   transform: translateY(-73px);
 }
 main .hero-image .image{
-  animation: floating 3s ease-in-out  infinite;
   position: relative;
   z-index: 3;
 }
+/* play store button */
+.get-app-button{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 15px;
+  cursor: pointer;
+  align-items: center;
+  margin: 10px;
+  border:2px solid #ea3b6c;
+  background-color: #ea3b6c;
+  border-radius: 12px;
+  font-size: 24px;
+  color: #fff;
+}
+.get-app-button div{
+  margin: 0 0 0 10px;
+}
+.get-app-button div p:first-child{
+  font-size: 12px;
+  text-align: left;
+  color: #121212 !important;
+  font-weight: 400;
+}
+.get-app-button div p{
+  color: #fff !important;
+   font-size: 16px;
+   font-weight: bold;
+}
+/* play store button*/
 @keyframes floating {
   0% {transform: translateY(10px)}
   50% {transform: translateY(0)}
@@ -161,9 +197,7 @@ main .hero-image .image{
   align-items: center;
   flex-flow:row wrap;
   margin:0 20px;
-  border-radius: 24px;
   background-color:#fff;
-  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper .left{
   line-height: 1.75;
@@ -193,9 +227,7 @@ main .hero-image .image{
   position: relative;
   flex-flow:row-reverse wrap;
   margin:0 20px;
-  border-radius: 24px;
   background-color:#fff;
-  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper-nd .left-nd{
   line-height: 1.75;
@@ -225,9 +257,7 @@ main .hero-image .image{
   position: relative;
   flex-flow:row wrap;
   margin:0 20px;
-  border-radius: 24px;
   background-color:#fff;
-  box-shadow:5px 5px 25px 0 rgba(46,61,73,.4)
 }
 .wrapper-th .left-th{
   line-height: 1.75;
