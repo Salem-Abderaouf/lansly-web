@@ -34,6 +34,30 @@
     </ul>
 
   </section>
+  <main>
+    <div class="hero-information">
+      <h1>Meet Our Team</h1>
+      <p>Made with love <br>
+        by our Team<br>for new way of learning</p>
+    </div>
+    <div class="hero-image">
+      <img src="assets/meet-team.png" alt="learn with your mobile" class="image" title="Meet our Team">
+    </div>
+  </main>
+  <section class="team-intro">
+    <div class="team-images">
+      <button onclick="showTeamInfo('salem')"><img src="./assets/raouf.JPG" alt="Selem" /></button>
+      <div>
+        <button onclick="showTeamInfo('khaled')"><img src="./assets/raouf.JPG" alt="khaled" /></button>
+        <button onclick="showTeamInfo('ahmed')"><img src="./assets/raouf.JPG" alt="Mohamed" /></button>
+      </div>
+    </div>
+    <div id="team">
+      <h2 id="team-name"></h2>
+      <p id="team-position"></p>
+      <p id="team-desc"></p>
+    </div>
+  </section>
   <section class="team first-member">
     <div class="member-information">
       <h2>Selama Salem </h2>
@@ -107,6 +131,7 @@
       </ul>
     </div>
   </section>
+  <script src="./js/team.js"></script>
   <script src="./js/app.js"></script>
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
