@@ -1,15 +1,8 @@
-const navList = document.querySelector('#navbar ul')
+const navList = document.querySelector('nav ul')
 const MiniNav = document.getElementsByClassName('mini-navBar')[0]
 const MenuButton = document.getElementsByClassName('nav-menu')[0]
 
-window.onload = () => { checkWindowWidth() }
-window.addEventListener('resize', () => {
-  checkWindowWidth()
-})
 
-const toggelNavbar = () => {
-  MiniNav.classList.toggle('Active')
-}
 const checkWindowWidth = () => {
   if (window.innerWidth < 620) {
     navList.style.display = "none"
@@ -19,4 +12,11 @@ const checkWindowWidth = () => {
     navList.style.display = "flex"
     MenuButton.style.display = "none"
   }
+}
+
+window.addEventListener('DOMContentLoaded', () => checkWindowWidth())
+window.addEventListener('resize', () => checkWindowWidth())
+
+const toggelNavbar = () => {
+  MiniNav.classList.toggle('Active')
 }
