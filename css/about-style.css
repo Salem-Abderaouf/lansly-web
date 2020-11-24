@@ -56,7 +56,6 @@
 }
 .member-information h2{
   color: #667eea;
-  font-size: 2em;
   align-self: flex-start !important;
 }
 .member-information ul li{
@@ -67,7 +66,6 @@
 }
 .member-information p{
   text-align: left;
-  font-size: 18px;
 }
 /* Fisrt child icon styling */
 .contact-accounts{
@@ -90,9 +88,9 @@
 .icon:before{
   content: '';
   background-color: #121212;
-  width: 65px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  height: 65px;
   position: absolute;
   top: -10px;
   left: -10px;
