@@ -97,8 +97,8 @@ main:after{
 }
 main{
 width: 100vw !important;
+height: 100vh;
 position: relative;
-margin: 73px 0;
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -111,6 +111,11 @@ main .hero-information{
   flex-direction: column;
   align-items: center;
   line-break: auto;
+}
+main mark{
+  background-color:#ea3b6c;
+  color: #fff;
+  font-weight: bold;
 }
 /* play store button */
 .get-app-button{
@@ -163,6 +168,24 @@ main .hero-image .image{
 .img{
   height: 400px;
   width: 400px;
+}
+#refelected-img{
+  transform: rotateY(180deg);
+}
+/* Heading  */
+.heading{
+  background: linear-gradient(45deg, #454555, #292929);
+  background-attachment: fixed;
+  margin-top: 30px;
+  padding: 75px 0;
+  text-align: center;
+}
+.heading h1{
+  line-height: 1.75;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ea3b6c;
 }
 @keyframes floating {
   0% {transform: translateY(10px)}
