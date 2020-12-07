@@ -59,8 +59,9 @@ main .hero-image .image{
   align-items: center;
 }
 .image{
-  width: 400px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
   background-size:auto;
 }
 .first-member-image{
@@ -246,7 +247,7 @@ height: unset;
   width: 315px;
   height: 210px;
   background-size:auto;
-  border-radius: 12px;
+  border-radius: 50%;
 }
 .icon{
   width: 30px;
