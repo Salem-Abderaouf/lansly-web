@@ -60,9 +60,9 @@ display: flex;
 }
 /*copeid */
 @font-face{
-  src:url('../assets/GothaProReg.otf');
+  src:url('../assets/Poppins-Regular.ttf');
   font-display: block;
-  font-family: Gotham;
+  font-family: Poppins;
 }
 *{
   margin: 0;
@@ -74,7 +74,7 @@ html,body{
   overflow-x: hidden;
 }
 body{
-  font-family: Gotham;
+  font-family: Poppins;
 }
 nav{
   height: 73px;

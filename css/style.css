@@ -4,9 +4,9 @@
   WHITE: '#fff',
   GREY: '#eff0f5', */
 @font-face{
-  src:url('../assets/GothaProReg.otf');
+  src:url('../assets/Poppins-Regular.ttf');
   font-display: block;
-  font-family: Gotham;
+  font-family: Poppins;
 }
 *{
   margin: 0;
@@ -18,7 +18,7 @@ html,body{
   overflow-x: hidden;
 }
 body{
-  font-family: Gotham;
+  font-family: Poppins;
 }
 nav{
   height: 73px;
@@ -312,43 +312,3 @@ main .hero-image .image{
   background-color: #ff9a83;
 }
 /* FOOTER */
-footer{
-  padding: 25px 0;
-  width: 100vw;
-  background: linear-gradient(45deg, black, #292929);
-  background-attachment: fixed;
-  z-index: 1;
-}
-footer .footer-main-content{
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 40px;
-  justify-content: space-evenly;
-} 
-footer h2{
-  color: #fff;
-}
-footer ul li{
-  list-style: none;
-  padding: 10px 0;
-}
-footer ul li a{
-  color: #ea3b6c;
-  cursor: pointer;
-  transition: color .5s linear;
-}
-footer ul li a:hover{
-  color: #fff;
-}
-.footer-lower-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.footer-lower-content p{
-  text-align: center;
-  color: #fff;
-}
-/*FOOTER */

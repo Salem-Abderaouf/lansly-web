@@ -47,6 +47,7 @@ main .hero-image .image{
   width: 400px;
   position: relative;
   z-index: 3;
+  border-radius: unset;
 }
 /* END MAIN */
 .first-member{
@@ -63,6 +64,8 @@ main .hero-image .image{
   height: 350px;
   border-radius: 50%;
   background-size:auto;
+  position: relative;
+  z-index: 2;
 }
 .first-member-image{
   position: relative;
@@ -84,6 +87,7 @@ main .hero-image .image{
 .member-information h2{
   color: #667eea;
   align-self: flex-start !important;
+  letter-spacing: 2px;
 }
 .member-information ul li{
   list-style: none;
