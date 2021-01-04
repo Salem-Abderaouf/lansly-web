@@ -273,3 +273,31 @@ height: unset;
   text-transform: uppercase;
   margin: 10px 0;
 }
+@media(min-width:1400px){
+  .image{
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-size:auto;
+  position: relative;
+  z-index: 2;
+}
+main .hero-information{
+  line-height: 1.75;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-break: auto;
+}
+main .hero-information h1{
+  color: #667eea;
+  font-size: 3em;
+}
+main .hero-information p{
+  font-size: 1.6em;
+}
+main .hero-image .image{
+  height:600px;
+  width:600px;
+}
+}
