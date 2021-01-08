@@ -273,6 +273,25 @@ height: unset;
   text-transform: uppercase;
   margin: 10px 0;
 }
+.thanks{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 73px;
+}
+.thanks h1{
+  font-size: 2em;
+}
+.parent{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.parent h2{
+  text-align: center;
+}
 @media(min-width:1400px){
   .image{
   width: 600px;
