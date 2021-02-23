@@ -108,8 +108,8 @@ main .hero-image{
   border-radius:12px;
 }
 main .hero-image .image{
-  height: 400px;
-  width: 400px;
+  height: 600px;
+  width: 600px;
   position: relative;
   z-index: 3;
 }
