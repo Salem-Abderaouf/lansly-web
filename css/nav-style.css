@@ -31,11 +31,14 @@ nav{
 }
 nav h2{
   color: #667eea;
+  font-size: 1.4em;
   font-weight: bold;
 }
 nav h2 a{
 text-decoration: none;
-color: #667eea;
+color: #000;
+display: flex;
+align-items: center;
 }
 nav ul li{
   list-style: none;
